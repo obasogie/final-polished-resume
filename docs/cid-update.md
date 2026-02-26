@@ -1,7 +1,7 @@
 # Updating the Site When the IPFS CID Changes
 
 ## TL;DR one-liner (commit message)
-CID rotated → updated ipfs-cif.txt and eth.html to new CID: <NEW_CID>
+CID rotated → updated ipfs-cid.txt and eth.html to new CID: <NEW_CID>
 
 ## Files involved
 - ipfs-cid.txt — contains ONLY the latest CID (no spaces/newlines if possible)
@@ -33,7 +33,7 @@ CID rotated → updated ipfs-cif.txt and eth.html to new CID: <NEW_CID>
       .catch(() => document.body.textContent = 'Unable to read ipfs-cid.txt');
   </script>
   <noscript>
-    This page redirects to the latest IPFS CID listed in ipfs-latest.txt.
+    This page redirects to the latest IPFS CID listed in ipfs-cid.txt.
     Please enable JavaScript or open https://ipfs.io/ipfs/<CID_HERE>/
   </noscript>
 </head>
